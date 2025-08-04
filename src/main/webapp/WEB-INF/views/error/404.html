@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Not Found</title>
+    <link rel="stylesheet" th:href="@{/resources/css/style.css}">
+</head>
+<body>
+<div class="error-container">
+    <h1>404 - Not Found</h1>
+    <p>The resource you are looking for could not be found.</p>
+    <p th:text="${'Details: ' + errorMessage}"></p>
+    <p><a th:href="@{/quotes/list}">Back to Quotes List</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Details</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/style.css}">
+</head>
+<body>
+    <h1>Quote Details</h1>
+    <div class="quote-details" th:object="${quote}">
+        <p th:text="*{content}">Quote text.</p>
+        <small>Author: <strong th:text="*{author}">Author's Name</strong></small><br/>
+        <small>Category: <strong th:text="*{category != null ? category.name : 'Uncategorized'}">Category</strong></small>
+    </div>
+    <br/>
+    <p><a href="/quotes">Back to Quotes List</a></p>
+</body>
+</html>

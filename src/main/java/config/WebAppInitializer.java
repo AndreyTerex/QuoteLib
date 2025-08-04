@@ -1,7 +1,6 @@
 package config;
 
 import jakarta.servlet.Filter;
-import org.jspecify.annotations.Nullable;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

@@ -8,5 +8,4 @@ import java.util.Optional;
 public interface CategoryDAO {
     List<Category> findAll();
     Optional<Category> findById(Long id);
-    // Можно также добавить save, update, delete для полного управления категориями
 }

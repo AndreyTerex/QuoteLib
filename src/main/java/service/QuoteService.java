@@ -3,7 +3,6 @@ package service;
 import domain.Quote;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface QuoteService {
     List<Quote> findAll(int page, int size);

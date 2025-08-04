@@ -19,6 +19,6 @@ public class Category {
     @NotNull
     @NotBlank
     @Size(max = 50, message = "Category name must not be blank and must be less than or equal to 50 characters")
-    @Pattern(regexp = "^[^<>&'\"/`=:]*$", message = "Поле содержит запрещенные символы")
+    @Pattern(regexp = "^[^<>&'\"/`=:]*$", message = "The field contains prohibited characters")
     private String name;
 }
